@@ -1,8 +1,11 @@
 # Agent Cost Attribution Script
 
-![License](https://img.shields.io/github/license/ai-engineer-community/agent-cost-attribution)
+![License](https://img.shields.io/github/license/yksanjo/agent-cost-attribution)
+![GitHub stars](https://img.shields.io/github/stars/yksanjo/agent-cost-attribution?style=social)
+![GitHub issues](https://img.shields.io/github/issues/yksanjo/agent-cost-attribution)
 ![Python](https://img.shields.io/badge/Made%20with-Python-blue)
 ![Flask](https://img.shields.io/badge/Dashboard-Flask-red)
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
 SDK wrapper + analytics dashboard showing per-agent token costs (input/output breakdown), cost per tool invocation, model cost trends over time, and alerts when costs exceed thresholds.
 
