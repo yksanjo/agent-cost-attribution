@@ -1,50 +1,84 @@
-# Agent Cost Attribution Script
+# agent-cost-attribution
 
-![License](https://img.shields.io/github/license/yksanjo/agent-cost-attribution)
-![GitHub stars](https://img.shields.io/github/stars/yksanjo/agent-cost-attribution?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yksanjo/agent-cost-attribution)
-![Python](https://img.shields.io/badge/Made%20with-Python-blue)
-![Flask](https://img.shields.io/badge/Dashboard-Flask-red)
-![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+## Detailed Description
 
-SDK wrapper + analytics dashboard showing per-agent token costs (input/output breakdown), cost per tool invocation, model cost trends over time, and alerts when costs exceed thresholds.
+agent-cost-attribution is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-## Features
+## Problem Statement
 
-- SDK wrapper for tracking agent costs
-- Per-agent token costs (input/output breakdown)
-- Cost per tool invocation
-- Model cost trends over time
-- Alerts when costs exceed thresholds
-- Analytics dashboard
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-## Installation
+## Solution Overview
+
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
 
 ```bash
-pip install agent-cost-attribution
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt  # or: pip install -e .[dev]
+pytest
 ```
 
 ## Usage
 
-```python
-from anthropic import Anthropic
-from agent_cost_attribution import CostTracker
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-client = Anthropic()
-cost_tracker = CostTracker()
+## Quality Standards
 
-def track_agent_call(agent_name, model):
-    response = client.messages.create(...)
-    cost = (response.usage.input_tokens * 0.003 +
-            response.usage.output_tokens * 0.015) / 1000
-    cost_tracker.record_cost(agent_name, cost, response.usage)
-    return response
-```
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
+
+## Security
+
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
+This project is released under the MIT License.
