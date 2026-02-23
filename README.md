@@ -1,5 +1,12 @@
 # agent-cost-attribution
 
+Production-grade project scaffold focused on reliability, maintainability, and fast onboarding.
+
+[![CI](https://img.shields.io/github/actions/workflow/status/yksanjo/agent-cost-attribution/ci.yml?branch=main&label=ci)](https://github.com/yksanjo/agent-cost-attribution/actions)
+![License](https://img.shields.io/github/license/yksanjo/agent-cost-attribution)
+![Last Commit](https://img.shields.io/github/last-commit/yksanjo/agent-cost-attribution)
+![Repo Size](https://img.shields.io/github/repo-size/yksanjo/agent-cost-attribution)
+
 ## Detailed Description
 
 agent-cost-attribution is maintained as an industry-grade software project with production-ready engineering practices.  
